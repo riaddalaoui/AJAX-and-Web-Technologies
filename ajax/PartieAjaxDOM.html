@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title>TP 3IF Ajax</title>
+  <meta name="author" content="DALAOUI-JOURDA">
+  <link rel="stylesheet" type="text/css" href="ExerciceAjax.css">
+  <script type="text/javascript" src="partieJavascript.js"></script>
+</head>
+
+<body>
+  <h1> TP 3IF Ajax </h1>
+  <h2>Bienvenue sur notre site</h2>
+  <h2 id="aut" >Auteurs : B3124 DALAOUI | JOURDA</h2>
+  <br>
+  <hr>
+  <div class="container">
+    <div class="left-column">
+        <p> 1. Changer le fond en bleu </p> 
+        <input name="button" id="changeColorButton" onclick="changeColors();" value="Bouton 1" type="button">
+        <p> 2. Remettre la couleur du fond en blanc </p>
+        <input name="button2" id="myButton2" onclick="BacktoWhite();" value="Bouton 2" type="button"> <br>
+        <p>3. Recherchez un pays par son code : </p>
+        <label for="countryCode">Code du pays:</label>
+        <input type="text" id="countryCode" name="countryCode"><br>
+        <br>
+        <input type="button" onclick="displayCountryInfo()" value="Rechercher">
+        <div id="countryInfo"></div>
+        <br>
+        <div id="svgContainer"></div>
+        <input type="button" onclick="loadAndDisplaySVG()" value="Bouton 4: Charger et Afficher le SVG"><br>
+        <input type="button" onclick="makeSVGElementsClickable()" value="Bouton 5: Rendre le SVG cliquable"><br>
+        <input type="button" onclick="loadWorldMapSVG()" value="Bouton 6: Chargez la map du monde"><br>
+        <input id="myButton7" type="button" onclick="makeCountriesClickable()" value="Bouton 7: Rendre les pays cliquables"><br>
+        <input type="button" onclick="captureMouseMovement()" value="Bouton 8: Capturer mouvement souris"><br>
+        <input id="myButton9" type="button" onclick="addAutoComplete()" value="Bouton 9: Activer auto-complete"><br>
+        <input type="button" onclick="addCurrency()" value="Bouton 10: Afficher la monnaie du pays"><br>
+        <input type="button" onclick="colorLanguage()" value="Bouton 11: Colorier les pays ayant la meme langue"><br>
+        <input type="button" onclick="guessCountry()" value="Bouton 12: Lancer le jeu"><br>
+    </div>
+    <div class="separator"></div> <!-- Ligne séparatrice -->
+    <div class="right-column">
+        <div id="worldMapContainer"></div>
+        <span id="infospan"></span><br>
+        <div id="countryToSearch"></div>
+        <div id="countryClique"></div>
+    </div>
+  </div>
+</body>
+
+</html>
